@@ -1,0 +1,563 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* HEAD ELEMENTS & SOCIALS */
+.first-head{
+    width: 50%;
+    /* padding: 2rem; */
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    background-color: whitesmoke;
+}
+
+.head1{
+    display: none;
+    align-items: center;
+    justify-content: space-between;  
+    /* padding:0 20px ; */
+    background-color: whitesmoke;
+    /* margin: 20px; */
+    
+}
+.head1>div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: orange;
+    
+    
+    
+   
+}
+.head1>div:nth-child(2){
+    background-color: orange;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 2rem;
+    position: relative;
+    
+}
+.head1>div:nth-child(2)::before{
+    content: '';
+    border-width: 2.4rem;
+    border-style: solid;
+    position: absolute;
+    border-color: whitesmoke orange orange whitesmoke;
+    top: 0;
+    left: 0;
+}
+.socials-icon>a{
+    display: inline;
+   padding: 10px;
+    gap: 3rem;
+    color: rgba(35, 23, 139, 0.884);
+    position: relative;
+    transition: all 500ms ease-in-out;
+    
+}
+.socials-icon>a:hover{
+    color: white;
+    transform: scale(1.3);
+    
+    
+}
+
+/* Logo */
+.logo{
+    width: 4rem;
+}
+
+/* HEADER ELEMENTS */
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   
+    
+}
+header>a{
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    
+}
+
+header>a>div>span{
+    color: orange;
+}
+header>.hdlinks{
+    gap: 1.2rem;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: red solid 2px; */
+    display: flex;
+    align-items: center;
+    flex-direction: inherit;
+      
+}
+.hdlinks>a{
+    display: none;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    color: black;
+    border-radius: 10px;
+    transition: all 500ms ease-in-out;
+   
+}
+
+.hdlinks>a:hover{
+    background-color: orange;
+    color: white;
+    
+}
+.bars{
+margin-right: 1.5rem;  
+}
+
+
+.hdname{
+    font-size: 1.5rem;
+}
+
+
+
+/* BANNER */
+.banner{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+}
+.banner img{
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+}
+.bannertitle{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #F6FFA6;
+    padding-top:7.5rem ;
+    text-shadow: -5px 0 16px #F6FFA6;
+}
+.bannertitle>span{
+    color: orange;
+    background-color: #F6FFA6;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.headbuttons{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+   
+    
+}
+.headbuttons>a{
+    color: #F6FFA6;
+    padding: 0.6rem;
+    margin: 1rem;
+    border-radius: 50px;
+    transition: all 500ms ease-in-out;
+}
+.buttons{
+    background-color: rgba(201, 139, 24, 0.829);
+    
+}
+.buttons:hover{
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+/* FIXED SOCIALS */
+.socialsfixed{
+    position: fixed;
+    right: 1rem;
+    bottom: 0;
+}
+.socialsfixed>a{
+    display: block;
+    padding: 0.5rem 0.2rem;
+    border-radius: 50%;
+    color: #F6FFA6;
+    background-color: orange;
+    margin: 0.5rem 0;
+}
+
+
+
+
+/* Images and Paragraphs */
+/* First Paragraph */
+.lorem{
+    width: 80%;
+    display: block;
+   margin: 2rem auto;
+   
+}
+.lorem>.first-p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+   width: 100%;
+   line-height: 1.6;
+}
+.first-p>p>span{
+   color: orange;
+   font-size: 1.2rem;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.first-img>{
+    width: 80%;
+}
+.first-img>img{
+    width: 90%;
+   
+}
+
+
+/* Second Paragraph */
+.lorem2{
+    width: 80%;
+    display: block;
+    margin: 2rem auto;
+    gap: 3rem;
+    
+}
+.second-p{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.second-img{
+    width: 80%;
+}
+.second-img>img{
+    width: 90%;
+    margin: auto 2.6rem;
+   
+}
+
+/* Third Lorem  */
+.lorem3{
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+}
+.third-p{
+    width: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.third-img{
+    width: 80%;
+}
+.third-img>img{
+    width: 90%;
+    margin: auto 2.6rem;
+}
+
+
+/* Animation Divs  */
+
+.container-div{
+    background-color:orange;
+    gap: 2rem;
+    
+}
+.circlediv{
+    position: relative;
+    margin-left:  9rem;
+    display: block;
+    padding: 2rem;
+}
+.circle1{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 70%;
+    border-top: 0.7rem solid transparent;
+    border-left: 0.7rem solid white;
+    border-right:0.7rem solid white;
+    border-bottom:0.7rem solid transparent;
+   animation: circle1 1s linear infinite;
+}
+@keyframes circle1 {
+    from{
+       transform: rotate(0deg); 
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.circle2{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 70%;
+    border-top: 0.7rem solid transparent;
+    border-left: 0.7rem solid white;
+    border-right: 0.7rem solid white;
+    border-bottom:0.7rem solid transparent;
+   animation: circle1 1s linear infinite;
+}
+@keyframes circle2 {
+    from{
+       transform: rotate(0deg); 
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.circle3{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 70%;
+    border-top: 0.7em solid transparent;
+    border-left: 0.7rem solid white;
+    border-right:0.7rem solid white;
+    border-bottom:0.7rem solid transparent;
+   animation: circle1 1s linear infinite;
+}
+@keyframes circle3 {
+    from{
+       transform: rotate(0deg); 
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* FOOTER  */
+footer{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    /* .head1{
+        display: flex;
+    } */
+    .logo{
+        width: 6rem;
+    }
+    .hdname{
+        font-size: 1.5rem;
+    }
+    .bars{
+        display: none;  
+        }
+     .hdlinks{
+            display: flex;
+            /* align-items: center; */
+            /* margin-right: 26rem;  */
+            
+        } 
+     .hdlinks>a{
+            display: flex;
+            flex-direction: end;
+        } 
+      .bannertitle{
+            font-size: 2rem;
+        } 
+        .bannertitle>span{
+            font-size: 3rem;
+        } 
+        .headbuttons>a{
+            padding: 1rem;
+            font-size: 1rem;
+            margin: 0 1.5rem 0 1.5rem;
+            
+        }
+        .headbuttons{
+            font-size: 1rem;
+            display: flex;
+            flex-direction: row;
+        } 
+        .lorem{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .first-img>img{
+            width: 100%;
+            height: 100%;
+        }
+        .lorem>.first-p{
+            width: 100%;
+        }
+        .lorem2{
+            display: flex;
+            align-items: center;
+        }
+        .second-img>img{
+            width: 100%;
+           
+        }
+        .lorem>.second-p{
+            width: 100%;
+        }
+        .lorem3{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .third-img>img{
+            width: 100%;
+        }
+        .container-div{
+            width: 100%;
+            display: flex;
+          
+          
+            
+        }
+        .animae{
+            display: flex;
+            position: relative;
+            margin: auto;
+            
+        }
+        .circlediv{
+            position: relative;
+           margin: auto;
+          
+           
+        }
+        .circle1{
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            border-top: 0.7rem solid transparent;
+            border-left: 0.7rem solid white;
+            border-right:0.7rem solid white;
+            border-bottom:0.7rem solid transparent;
+           animation: circle1 1s linear infinite;
+        }
+        @keyframes circle1 {
+            from{
+               transform: rotate(0deg); 
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .circle2{
+            position: absolute;
+            top: 19%;
+            left: 16%;
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            border-top: 0.7rem solid transparent;
+            border-left: 0.7rem solid white;
+            border-right: 0.7rem solid white;
+            border-bottom:0.7rem solid transparent;
+           animation: circle1 1s linear infinite;
+        }
+        @keyframes circle2 {
+            from{
+               transform: rotate(0deg); 
+            }
+            to{
+                transform: rotate(-360deg);
+            }
+        }
+        .circle3{
+            position: absolute;
+            top: 29%;
+            left: 25%;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            border-top: 0.7em solid transparent;
+            border-left: 0.7rem solid white;
+            border-right:0.7rem solid white;
+            border-bottom:0.7rem solid transparent;
+           animation: circle1 1s linear infinite;
+        }
+        @keyframes circle3 {
+            from{
+               transform: rotate(90deg); 
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        } 
+}
